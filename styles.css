@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+.logo {
+    font-size: 20px;
+    margin: 8px;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    
+   
+
+}
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightgrey;
+    color:black;
+    
+   
+}
+.nav-links {
+    height: 100%;
+}
+
+.nav-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li{
+    list-style: none;
+
+}
+.nav-links li a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.nav-links li:hover {
+    background-color:mistyrose;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    width: 35px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 780px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+    }
+
+    .nav-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav-links ul li {
+        text-align: center;
+
+    }
+
+    .nav-links ul li a {
+        padding: 10px 18px;
+       
+    }
+    .nav-links.active{
+        display: flex;
+    }
+
+}
+
+.intro{
+    max-width: 650px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255,255,255,.4);
+    font-size: 18px;
+    box-shadow: 0 15px 20px rgba(0,0,0,.2);
+    padding:30px;
+    text-align: center;
+    
+
+}
+h2{
+    position: absolute;
+    display: block;
+    width: 100%;
+    top:5%;
+    text-align: left;
+    padding-left: 12px;
+    font-weight: 100;
+    color: white;
+    font-size: 16px;
+    
+}
+.img{
+    text-align: center;
+     background: rgba(255,255,255,.4);
+    font-size: 18px;
+    padding:30px;
+    
+
+}
+h4{
+    color: silver;
+    font-size: 10px;
+    padding-left: 10px;
+   
+   
+}
